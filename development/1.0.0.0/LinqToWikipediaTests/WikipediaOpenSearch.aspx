@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title></title>
+        <style type="text/css">
+        input {font-size:8pt}
+    </style>
     <script type="text/javascript">
         function RefreshUpdatePanel() {
             __doPostBack('<%= tb_OpenSearch.ClientID %>', '');
@@ -21,54 +24,57 @@
         <p style="text-align:center"><b>LinqToWikipedia</b> Open Search Live Demo</p>
         
         <p style="text-align:center;font-size:8pt">
-        Go to the <a href="http://linqtowikipedia.codeplex.com/">LinqToWikipedia Codeplex</a> project site<br />
-        For more information visit the <a href="">LinqToWikipedia Blog</a></p>
+        View the <a href="WikipediaQuery.aspx">Query</a> Demo</p>
 
         <table border="0" align="center" width="700">
         <tr>
-        <td>
-        Select number of results to display: -&gt; &nbsp;
-        
-        <asp:DropDownList ID="ddl_results" runat="server" AutoPostBack="true" OnSelectedIndexChanged="UpdateDisplayNumber" /> <br />
-        
-        Begin typing in the query box to view results: -&gt; &nbsp;
-        
-        <asp:TextBox ID="tb_OpenSearch" EnableViewState="false" runat="server" onkeyup="RefreshUpdatePanel();" AutoPostBack="true" OnTextChanged="OpenSearch_TextChanged"></asp:TextBox> 
-        <br /><br />
-        
-        <asp:UpdatePanel ID="Update" runat="server"> 
-        
-            <ContentTemplate>  
-                <asp:DataList ID="dl_results" runat="server">
-                    <ItemTemplate>
-                        <table border="0" cellpadding="2" cellspacing="0">
-                            <tr>
-                                <%# CheckImage((Uri)DataBinder.Eval(Container.DataItem, "ImageUrl"), (Uri)DataBinder.Eval(Container.DataItem, "Url"))%>
-                                <td>
-                                    <b><a href="<%# DataBinder.Eval(Container.DataItem, "Url")%>" target="_blank">
-                                    <%# DataBinder.Eval(Container.DataItem, "Text")%>
-                                    </a></b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>(<span style="font-size:8pt"><%# DataBinder.Eval(Container.DataItem, "Description")%></span>)</td>
-                            </tr>
-                        </table>
-                        <br />
-                    </ItemTemplate>
-                </asp:DataList>
-            </ContentTemplate> 
-            
-            <Triggers> 
-                <asp:AsyncPostBackTrigger ControlID="tb_OpenSearch" /> 
-                <asp:AsyncPostBackTrigger ControlID="ddl_results" />
-            </Triggers> 
-        
-        </asp:UpdatePanel> 
-        
-        </td>
+            <td>
+                Select number of results to display - <i>Linq -&gt; Take()</i>: -&gt; &nbsp;
+                
+                <asp:DropDownList ID="ddl_results" runat="server" AutoPostBack="true" OnSelectedIndexChanged="UpdateDisplayNumber" /> <br /><br />
+                
+                Begin typing in the query box to view results: -&gt; &nbsp;
+                
+                <asp:TextBox ID="tb_OpenSearch" EnableViewState="false" runat="server" onkeyup="RefreshUpdatePanel();" AutoPostBack="true" OnTextChanged="OpenSearch_TextChanged"></asp:TextBox> 
+                <br /><br />
+                
+                <asp:UpdatePanel ID="Update" runat="server"> 
+                
+                    <ContentTemplate>  
+                        <asp:DataList ID="dl_results" runat="server">
+                            <ItemTemplate>
+                                <table border="0" cellpadding="2" cellspacing="0">
+                                    <tr>
+                                        <%# CheckImage((Uri)DataBinder.Eval(Container.DataItem, "ImageUrl"), (Uri)DataBinder.Eval(Container.DataItem, "Url"))%>
+                                        <td>
+                                            <b><a href="<%# DataBinder.Eval(Container.DataItem, "Url")%>" target="_blank">
+                                            <%# DataBinder.Eval(Container.DataItem, "Text")%>
+                                            </a></b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>(<span style="font-size:8pt"><%# DataBinder.Eval(Container.DataItem, "Description")%></span>)</td>
+                                    </tr>
+                                </table>
+                                <br />
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </ContentTemplate> 
+                    
+                    <Triggers> 
+                        <asp:AsyncPostBackTrigger ControlID="tb_OpenSearch" /> 
+                        <asp:AsyncPostBackTrigger ControlID="ddl_results" />
+                    </Triggers> 
+                
+                </asp:UpdatePanel> 
+            </td>
         </tr>
         </table>
+        
+        <p style="text-align:center;font-size:8pt">
+        Go to the <a href="http://linqtowikipedia.codeplex.com/">LinqToWikipedia Codeplex</a> project site<br />
+        For more information visit the <a href="">LinqToWikipedia Blog</a><br /><br />
+        <i><a href="http://www.geekswithblogs.net/ballhaus" target="_blank">Michael Ballhaus</a></i></p>
         
     </div>
     </form>

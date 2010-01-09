@@ -16,11 +16,11 @@ namespace LinqToWikipedia
             _opensearchprovider = new WikipediaOpenSearchProvider();
         }
 
-        public IWikipediaQueryable<WikipediaSiteSearchResult> Query
+        public IWikipediaQueryable<WikipediaQueryResult> Query
         {
             get
             {
-                return new WikipediaQuery<WikipediaSiteSearchResult>(_queryprovider);
+                return new WikipediaQuery<WikipediaQueryResult>(_queryprovider);
             }
         }
 

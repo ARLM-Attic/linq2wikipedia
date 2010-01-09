@@ -35,7 +35,7 @@ namespace LinqToWikipedia
         {
             SystemType linqtype = new SystemType();
 
-            if (linqtype.GetLinqElementType(expression.Type) == typeof(WikipediaSiteSearchResult))
+            if (linqtype.GetLinqElementType(expression.Type) == typeof(WikipediaQueryResult))
                 return WikipediaQueryResponse.Get(WikipediaQueryRequest.Send(linqtype.GetLinqElementType(expression.Type), expression));
 
             return null;

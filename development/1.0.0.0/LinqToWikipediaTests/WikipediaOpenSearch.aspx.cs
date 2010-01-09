@@ -35,9 +35,9 @@ namespace LinqToWikipediaTests
             WikipediaContext datacontext = new WikipediaContext();
 
             var opensearch = (
-                from p in datacontext.OpenSearch
-                where p.Keyword == tb_OpenSearch.Text
-                select p).Take(DisplayResults);
+                from wikipedia in datacontext.OpenSearch
+                where wikipedia.Keyword == tb_OpenSearch.Text
+                select wikipedia).Take(DisplayResults);
 
             dl_results.DataSource = opensearch;
             dl_results.DataBind();

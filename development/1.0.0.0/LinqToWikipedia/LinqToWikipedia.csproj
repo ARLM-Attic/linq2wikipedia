@@ -65,7 +65,7 @@
     <Compile Include="Query\WikipediaQueryResponse.cs" />
     <Compile Include="Query\WikipediaQuery.cs" />
     <Compile Include="Query\WikipediaQueryProvider.cs" />
-    <Compile Include="Query\WikipediaSiteSearchResult.cs" />
+    <Compile Include="Query\WikipediaQueryResult.cs" />
     <Compile Include="Query\WikipediaQueryUriBuilder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

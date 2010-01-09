@@ -52,7 +52,7 @@ namespace LinqToWikipedia
 
                     ParseQuery(lambda.Body);
 
-                    _urlBuilder.Append("srsearch=" + query);
+                    _urlBuilder.Append("srsearch=" + query.Substring(0, query.Length -1));
 
                     return m;
                 }
@@ -125,7 +125,7 @@ namespace LinqToWikipedia
             }
             else
             {
-                throw new NotSupportedException("'WikipediaSiteSearchResult' Query expression can only contain 'Keyword'");
+                throw new NotSupportedException("'WikipediaQueryResult' Query expression can only contain 'Keyword'");
             }
         }
     }

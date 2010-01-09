@@ -9,9 +9,9 @@ namespace LinqToWikipedia
 {
     internal static class WikipediaQueryResponse
     {
-        internal static IEnumerable<WikipediaSiteSearchResult> Get(string xml)
+        internal static IEnumerable<WikipediaQueryResult> Get(string xml)
         {
-            List<WikipediaSiteSearchResult> resultList = new List<WikipediaSiteSearchResult>();
+            List<WikipediaQueryResult> resultList = new List<WikipediaQueryResult>();
 
             int recordcount = 0;
 
@@ -29,7 +29,7 @@ namespace LinqToWikipedia
 
                     if (element.Name.LocalName.ToString().Equals("p"))
                     {
-                        WikipediaSiteSearchResult wsr = new WikipediaSiteSearchResult();
+                        WikipediaQueryResult wsr = new WikipediaQueryResult();
 
                         var items = from x in element.Attributes()
                                     select x;
