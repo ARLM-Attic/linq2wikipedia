@@ -50,23 +50,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IWikipediaQueryable.cs" />
-    <Compile Include="ExpressionVisitor.cs" />
-    <Compile Include="OpenSearch\WikipediaOpenSearch.cs" />
-    <Compile Include="OpenSearch\WikipediaOpenSearchProvider.cs" />
-    <Compile Include="OpenSearch\WikipediaOpenSearchResponse.cs" />
-    <Compile Include="OpenSearch\WikipediaOpenSearchResult.cs" />
-    <Compile Include="OpenSearch\WikipediaOpenSearchRequest.cs" />
-    <Compile Include="OpenSearch\WikipediaOpenSearchUriBuilder.cs" />
-    <Compile Include="QueryException.cs" />
-    <Compile Include="SystemType.cs" />
+    <Compile Include="Interfaces\IWikipediaOpenSearchResult.cs" />
+    <Compile Include="Interfaces\IWikipediaQueryResult.cs" />
+    <Compile Include="Utilities\ExpressionVisitor.cs" />
+    <Compile Include="IQueryable\WikipediaOpenSearch.cs" />
+    <Compile Include="Providers\WikipediaOpenSearchProvider.cs" />
+    <Compile Include="UriResponses\WikipediaOpenSearchResponse.cs" />
+    <Compile Include="QueryTypes\WikipediaOpenSearchResult.cs" />
+    <Compile Include="UriRequests\WikipediaOpenSearchRequest.cs" />
+    <Compile Include="UriBuilders\WikipediaOpenSearchUriBuilder.cs" />
+    <Compile Include="Exceptions\QueryException.cs" />
+    <Compile Include="Utilities\SystemType.cs" />
     <Compile Include="WikipediaContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query\WikipediaQueryRequest.cs" />
-    <Compile Include="Query\WikipediaQueryResponse.cs" />
-    <Compile Include="Query\WikipediaQuery.cs" />
-    <Compile Include="Query\WikipediaQueryProvider.cs" />
-    <Compile Include="Query\WikipediaQueryResult.cs" />
-    <Compile Include="Query\WikipediaQueryUriBuilder.cs" />
+    <Compile Include="UriRequests\WikipediaQueryRequest.cs" />
+    <Compile Include="UriResponses\WikipediaQueryResponse.cs" />
+    <Compile Include="IQueryable\WikipediaQuery.cs" />
+    <Compile Include="Providers\WikipediaQueryProvider.cs" />
+    <Compile Include="QueryTypes\WikipediaQueryResult.cs" />
+    <Compile Include="UriBuilders\WikipediaQueryUriBuilder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

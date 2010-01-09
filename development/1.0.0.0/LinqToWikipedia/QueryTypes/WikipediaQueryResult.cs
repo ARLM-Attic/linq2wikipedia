@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LinqToWikipedia
 {
-    public class WikipediaQueryResult
+    public class WikipediaQueryResult : IWikipediaQueryResult
     {
         public string Title { get; set; }
 
