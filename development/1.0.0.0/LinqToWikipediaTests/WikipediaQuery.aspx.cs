@@ -5,11 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using LinqToWikipedia;
+using System.Data;
 
 namespace LinqToWikipediaTests
 {
     public partial class WikipediaQuery : System.Web.UI.Page
     {
+        private int totalrecords = 0;
+
         public int DisplayResults
         {
             get { return Convert.ToInt32(ddl_results.SelectedValue); }
@@ -25,6 +28,7 @@ namespace LinqToWikipediaTests
         protected void Page_Init(object sender, EventArgs e)
         {
             btn_query.Click += new EventHandler(btn_query_Click);
+            dl_results.ItemDataBound += new DataListItemEventHandler(dl_results_ItemDataBound);
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -68,9 +72,19 @@ namespace LinqToWikipediaTests
 
             dl_results.DataSource = query;
             dl_results.DataBind();
+        }
 
-            foreach (WikipediaQueryResult result in query.Take(1))
-                lbl_totalrecords.Text = result.RecordCount.ToString();
+        protected void dl_results_ItemDataBound(object sender, DataListItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                if (this.totalrecords == 0)
+                {
+                    this.totalrecords = ((WikipediaQueryResult)e.Item.DataItem).RecordCount;
+
+                    lbl_totalrecords.Text = this.totalrecords.ToString();
+                }
+            }
         }
     }
 }
