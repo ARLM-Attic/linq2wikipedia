@@ -1,0 +1,14 @@
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\bin\LinqToWikipediaTests.dll
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\bin\LinqToWikipediaTests.pdb
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\obj\Debug\LinqToWikipediaTests.dll
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\obj\Debug\LinqToWikipediaTests.pdb
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\bin\LinqToWikipedia.dll
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipediaTests\bin\LinqToWikipedia.pdb
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\bin\LinqToWikipediaTests.dll
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\bin\LinqToWikipediaTests.pdb
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\bin\LinqToWikipedia.dll
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\bin\LinqToWikipedia.pdb
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\obj\Debug\ResolveAssemblyReference.cache
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\obj\Debug\LinqToWikipediaTests.dll
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipediaTests\obj\Debug\LinqToWikipediaTests.pdb
