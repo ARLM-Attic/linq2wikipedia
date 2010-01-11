@@ -1,0 +1,10 @@
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipedia\bin\Debug\LinqToWikipedia.dll
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipedia\bin\Debug\LinqToWikipedia.pdb
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipedia\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipedia\obj\Debug\LinqToWikipedia.dll
+C:\Documents and Settings\a85369\My Documents\Visual Studio 2008\Projects\LinqToWikipedia\LinqToWikipedia\obj\Debug\LinqToWikipedia.pdb
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipedia\bin\Debug\LinqToWikipedia.dll
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipedia\bin\Debug\LinqToWikipedia.pdb
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipedia\obj\Debug\ResolveAssemblyReference.cache
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipedia\obj\Debug\LinqToWikipedia.dll
+C:\TeamFoundation\tfs09.codeplex.com.443\LinqToWikipedia\development\1.0.0.0\LinqToWikipedia\obj\Debug\LinqToWikipedia.pdb
