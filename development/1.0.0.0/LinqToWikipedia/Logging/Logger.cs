@@ -41,7 +41,14 @@ namespace LinqToWikipedia
                 }
             }
 
-            EventLog.WriteEntry("application", sb.ToString(), logtype);
+            try
+            {
+                EventLog.WriteEntry("application", sb.ToString(), logtype);
+            }
+            catch 
+            {
+                // do nothing in case application identity does not have access to write to Event Log
+            }
         }
     }
 }
