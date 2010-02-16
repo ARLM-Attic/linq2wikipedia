@@ -30,6 +30,8 @@ namespace LinqToWikipedia
                 if (credentials != null)
                     webRequest.Proxy.Credentials = credentials;
 
+                webRequest.UserAgent = "Mozilla/5.0";
+
                 webResponse = (HttpWebResponse)webRequest.GetResponse();
             }
             catch (HttpListenerException httperr)
